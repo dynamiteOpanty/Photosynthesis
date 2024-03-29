@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:scallion_seeds"
+    },
+    {
+      "item": "photosynthesis:kale_seeds"
+    },
+    {
+      "item": "minecraft:farmland"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:chickpea_seeds"
+  },
+  "cookingtime": 600,
+  "chance": 50.0
+}

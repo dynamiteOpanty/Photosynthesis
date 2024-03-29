@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:eggplant_seeds"
+    },
+    {
+      "item": "photosynthesis:chive_seeds"
+    },
+    {
+      "item": "minecraft:farmland"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:onion_seeds"
+  },
+  "cookingtime": 600,
+  "chance": 50.0
+}
