@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:oregano_seeds"
+    },
+    {
+      "item": "photosynthesis:parsley_seeds"
+    },
+    {
+      "item": "minecraft:farmland"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:pineapple_seeds"
+  },
+  "cookingtime": 600,
+  "chance": 50.0
+}
