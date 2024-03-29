@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:spinach_seeds"
+    },
+    {
+      "item": "photosynthesis:barley_seeds"
+    },
+    {
+      "item": "minecraft:farmland"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:asparagus_seeds"
+  },
+  "cookingtime": 600,
+  "chance": 50.0
+}

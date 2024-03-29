@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:allium_seeds"
+    },
+    {
+      "item": "photosynthesis:lily_of_the_valley_seeds"
+    },
+    {
+      "item": "minecraft:farmland"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:ginger_seeds"
+  },
+  "cookingtime": 600,
+  "chance": 50.0
+}

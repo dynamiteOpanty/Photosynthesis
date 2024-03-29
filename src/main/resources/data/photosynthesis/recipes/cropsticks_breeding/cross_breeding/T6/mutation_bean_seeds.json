@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:wither_rose_seeds"
+    },
+    {
+      "item": "photosynthesis:azure_bluet_seeds"
+    },
+    {
+      "item": "minecraft:farmland"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:bean_seeds"
+  },
+  "cookingtime": 600,
+  "chance": 50.0
+}

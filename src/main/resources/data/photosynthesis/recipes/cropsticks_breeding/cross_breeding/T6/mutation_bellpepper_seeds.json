@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:azure_bluet_seeds"
+    },
+    {
+      "item": "photosynthesis:allium_seeds"
+    },
+    {
+      "item": "minecraft:farmland"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:bellpepper_seeds"
+  },
+  "cookingtime": 600,
+  "chance": 50.0
+}

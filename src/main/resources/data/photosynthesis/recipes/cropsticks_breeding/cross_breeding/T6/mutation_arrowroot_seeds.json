@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:oxeye_daisy_seeds"
+    },
+    {
+      "item": "photosynthesis:corn_seeds"
+    },
+    {
+      "item": "minecraft:farmland"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:arrowroot_seeds"
+  },
+  "cookingtime": 600,
+  "chance": 50.0
+}
