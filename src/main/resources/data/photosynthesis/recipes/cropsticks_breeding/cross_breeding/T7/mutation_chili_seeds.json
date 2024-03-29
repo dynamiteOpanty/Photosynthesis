@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:artichoke_seeds"
+    },
+    {
+      "item": "photosynthesis:arrowroot_seeds"
+    },
+    {
+      "item": "minecraft:farmland"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:chili_seeds"
+  },
+  "cookingtime": 600,
+  "chance": 50.0
+}
