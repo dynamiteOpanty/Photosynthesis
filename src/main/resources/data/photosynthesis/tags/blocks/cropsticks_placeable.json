@@ -4,6 +4,7 @@
     "minecraft:farmland",
     "minecraft:dirt",
     "minecraft:grass_block",
-    "minecraft:soul_sand"
+    "minecraft:soul_sand",
+    "minecraft:sand"
   ]
 }

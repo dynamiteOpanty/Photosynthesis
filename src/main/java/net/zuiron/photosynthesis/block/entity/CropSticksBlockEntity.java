@@ -1,9 +1,6 @@
 package net.zuiron.photosynthesis.block.entity;
 
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.CropBlock;
-import net.minecraft.block.PlantBlock;
+import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.BlockItem;
@@ -139,9 +136,16 @@ public class CropSticksBlockEntity extends BlockEntity {
 
         ItemStack output = recipe.get().getOutputStack().getItem().getDefaultStack();
 
-        //get plantblockstate from itemstack
-        PlantBlock block = ((PlantBlock) ((BlockItem) output.getItem()).getBlock());
-        BlockState state = block.getDefaultState();
+        BlockState state;
+        if(((BlockItem) output.getItem()).getBlock() instanceof PlantBlock)
+        {
+            //get plantblockstate from itemstack
+            PlantBlock block = ((PlantBlock) ((BlockItem) output.getItem()).getBlock());
+            state = block.getDefaultState();
+        } else {
+            Block block = ((BlockItem) output.getItem()).getBlock();
+            state = block.getDefaultState();
+        }
 
         //IF cropsticks contains pesticide and fertilizer, apply from cropsticks.
         if(state.contains(ModProperties.MOD_FERTILIZED)) {

@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "minecraft:torchflower_seeds"
+    },
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "item": "minecraft:sand"
+    }
+  ],
+  "output": {
+    "item": "minecraft:cactus"
+  },
+  "cookingtime": 600,
+  "chance": 50.0
+}
