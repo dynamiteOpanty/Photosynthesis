@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:rye_seeds"
+    },
+    {
+      "item": "photosynthesis:floramelissa_seeds"
+    },
+    {
+      "item": "minecraft:grass_block"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:dandelion_seeds"
+  },
+  "cookingtime": 600,
+  "chance": 50.0
+}

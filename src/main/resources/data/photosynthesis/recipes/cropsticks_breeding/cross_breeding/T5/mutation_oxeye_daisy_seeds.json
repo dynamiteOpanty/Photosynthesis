@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:pink_tulip_seeds"
+    },
+    {
+      "item": "photosynthesis:floramelissia_seeds"
+    },
+    {
+      "item": "minecraft:grass_block"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:oxeye_daisy_seeds"
+  },
+  "cookingtime": 600,
+  "chance": 50.0
+}

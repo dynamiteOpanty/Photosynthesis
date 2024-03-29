@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:corn_seeds"
+    },
+    {
+      "item": "photosynthesis:white_tulip_seeds"
+    },
+    {
+      "item": "minecraft:farmland"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:barley_seeds"
+  },
+  "cookingtime": 600,
+  "chance": 50.0
+}

@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:blue_orchid_seeds"
+    },
+    {
+      "item": "photosynthesis:red_tulip_seeds"
+    },
+    {
+      "item": "minecraft:grass_block"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:allium_seeds"
+  },
+  "cookingtime": 600,
+  "chance": 50.0
+}

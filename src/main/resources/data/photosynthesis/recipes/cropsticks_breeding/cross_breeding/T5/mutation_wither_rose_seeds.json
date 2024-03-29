@@ -1,0 +1,22 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:orange_tulip_seeds"
+    },
+    {
+      "item": "photosynthesis:dandelion_seeds"
+    },
+    {
+      "item": "minecraft:grass_block"
+    },
+    {
+      "item": "minecraft:netherrack"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:wither_rose_seeds"
+  },
+  "cookingtime": 600,
+  "chance": 50.0
+}

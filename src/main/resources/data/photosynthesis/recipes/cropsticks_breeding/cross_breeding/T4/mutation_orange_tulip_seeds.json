@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:sugarbeet_seeds"
+    },
+    {
+      "item": "photosynthesis:rye_seeds"
+    },
+    {
+      "item": "minecraft:grass_block"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:orange_tulip_seeds"
+  },
+  "cookingtime": 600,
+  "chance": 50.0
+}
