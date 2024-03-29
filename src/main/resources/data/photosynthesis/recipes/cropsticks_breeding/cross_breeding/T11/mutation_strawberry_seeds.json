@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:lentil_seeds"
+    },
+    {
+      "item": "photosynthesis:radish_seeds"
+    },
+    {
+      "item": "minecraft:farmland"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:strawberry_seeds"
+  },
+  "cookingtime": 600,
+  "chance": 50.0
+}

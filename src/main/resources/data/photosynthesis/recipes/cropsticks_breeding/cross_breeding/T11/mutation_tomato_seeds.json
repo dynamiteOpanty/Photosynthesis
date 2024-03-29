@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:tomatillo_seeds"
+    },
+    {
+      "item": "photosynthesis:onion_seeds"
+    },
+    {
+      "item": "minecraft:farmland"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:tomato_seeds"
+  },
+  "cookingtime": 600,
+  "chance": 50.0
+}

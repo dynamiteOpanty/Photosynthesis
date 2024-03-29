@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:rutabaga_seeds"
+    },
+    {
+      "item": "photosynthesis:tomatillo_seeds"
+    },
+    {
+      "item": "minecraft:farmland"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:erythroxylum_coca_seeds"
+  },
+  "cookingtime": 600,
+  "chance": 50.0
+}
