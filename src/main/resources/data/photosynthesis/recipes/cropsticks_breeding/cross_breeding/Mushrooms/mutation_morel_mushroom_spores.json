@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "minecraft:brown_mushroom"
+    },
+    {
+      "item": "photosynthesis:chanterelle_mushroom_spores"
+    },
+    {
+      "item": "minecraft:dirt"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:morel_mushroom_spores"
+  },
+  "cookingtime": 600,
+  "chance": 35.0
+}
