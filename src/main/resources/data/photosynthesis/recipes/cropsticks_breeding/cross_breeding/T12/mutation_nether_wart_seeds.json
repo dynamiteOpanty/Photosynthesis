@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:jicama_seeds"
+    },
+    {
+      "item": "photosynthesis:jute_seeds"
+    },
+    {
+      "item": "minecraft:soul_sand"
+    }
+  ],
+  "output": {
+    "item": "minecraft:nether_wart"
+  },
+  "cookingtime": 600,
+  "chance": 35.0
+}
