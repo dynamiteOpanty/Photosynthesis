@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:chanterelle_mushroom_spores"
+    },
+    {
+      "item": "photosynthesis:white_button_mushroom_spores"
+    },
+    {
+      "item": "minecraft:soul_soil"
+    }
+  ],
+  "output": {
+    "item": "minecraft:crimson_fungus"
+  },
+  "cookingtime": 600,
+  "chance": 35.0
+}

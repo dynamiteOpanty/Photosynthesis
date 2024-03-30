@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:morel_mushroom_spores"
+    },
+    {
+      "item": "minecraft:crimson_fungus"
+    },
+    {
+      "item": "minecraft:soul_soil"
+    }
+  ],
+  "output": {
+    "item": "minecraft:warped_fungus"
+  },
+  "cookingtime": 600,
+  "chance": 35.0
+}
