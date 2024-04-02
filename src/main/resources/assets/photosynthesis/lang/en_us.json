@@ -1551,5 +1551,13 @@
   "item.photosynthesis.cooked_alligator_meat": "Cooked Alligator Meat",
   "item.photosynthesis.fried_alligator": "Crispy Cajun Fried Alligator",
   "item.photosynthesis.smoked_alligator_jerky": "Smoked Alligator Jerky",
-  "item.photosynthesis.alligator_tooth": "Alligator Tooth"
+  "item.photosynthesis.alligator_tooth": "Alligator Tooth",
+
+  "item.photosynthesis.caprese_salad": "Caprese Salad",
+  "item.photosynthesis.ground_pepper": "Ground Pepper",
+  "item.photosynthesis.salted_sunflower_seeds": "Salted Sunflower Seeds",
+  "item.photosynthesis.salted_pumpkin_seeds": "Salted Pumpkin Seeds",
+  "item.photosynthesis.cocoa_powder": "Cocoa Powder",
+  "item.photosynthesis.bacon_bits": "Bacon Bits",
+  "item.photosynthesis.raisin": "Raisin"
 }
