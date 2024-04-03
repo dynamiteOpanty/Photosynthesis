@@ -15,6 +15,7 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.minecraft.world.event.GameEvent;
 import net.zuiron.photosynthesis.util.ModUtil;
+import net.zuiron.photosynthesis.util.getChickenStuff;
 import net.zuiron.photosynthesis.util.getCustomVarsPassiveEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -24,7 +25,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(ChickenEntity.class)
-public abstract class ModChickenEntity extends AnimalEntity {
+public abstract class ModChickenEntity extends AnimalEntity implements getChickenStuff {
     @Shadow
     public float prevFlapProgress;
     @Shadow
@@ -49,6 +50,11 @@ public abstract class ModChickenEntity extends AnimalEntity {
     public int mod_Egg = 0;
     @Unique
     protected final int mod_Egg_max = 48000; //24000 = one egg.
+
+    @Unique
+    public int getMod_Egg() { return this.mod_Egg; }
+    @Unique
+    public int getMod_Egg_Max() { return this.mod_Egg_max; }
 
     @Inject(method = "tickMovement", at = @At("HEAD"), cancellable = true)
     public void tickMovement(CallbackInfo ci) {

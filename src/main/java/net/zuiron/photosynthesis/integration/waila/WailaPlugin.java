@@ -4,10 +4,7 @@ import mcp.mobius.waila.api.IRegistrar;
 import mcp.mobius.waila.api.IWailaPlugin;
 import net.minecraft.block.CropBlock;
 import net.minecraft.block.SweetBerryBushBlock;
-import net.minecraft.entity.passive.AnimalEntity;
-import net.minecraft.entity.passive.CowEntity;
-import net.minecraft.entity.passive.GoatEntity;
-import net.minecraft.entity.passive.PassiveEntity;
+import net.minecraft.entity.passive.*;
 import net.zuiron.photosynthesis.block.custom.CropSticksBlock;
 import net.zuiron.photosynthesis.integration.waila.components.BerryTreeGrowthComponent;
 import net.zuiron.photosynthesis.integration.waila.components.EntityDataStatsComponent;
@@ -27,6 +24,7 @@ public class WailaPlugin implements IWailaPlugin {
 
         registrar.addComponent(EntityDataStatsComponent.INSTANCE, BODY, CowEntity.class);
         registrar.addComponent(EntityDataStatsComponent.INSTANCE, BODY, GoatEntity.class);
+        registrar.addComponent(EntityDataStatsComponent.INSTANCE, BODY, ChickenEntity.class);
 
         registrar.addEntityData(EntityDataStatsComponent.INSTANCE, PassiveEntity.class);
     }

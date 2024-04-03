@@ -1,13 +1,11 @@
 package net.zuiron.photosynthesis.integration.waila.components;
 
 import mcp.mobius.waila.api.*;
-import net.minecraft.entity.passive.AnimalEntity;
-import net.minecraft.entity.passive.CowEntity;
-import net.minecraft.entity.passive.GoatEntity;
-import net.minecraft.entity.passive.PassiveEntity;
+import net.minecraft.entity.passive.*;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.text.Text;
 import net.zuiron.photosynthesis.api.Seasons;
+import net.zuiron.photosynthesis.util.getChickenStuff;
 import net.zuiron.photosynthesis.util.getCowStuff;
 import net.zuiron.photosynthesis.util.getCustomVarsPassiveEntity;
 import net.zuiron.photosynthesis.util.getGoatStuff;
@@ -97,6 +95,18 @@ public enum EntityDataStatsComponent implements IEntityComponentProvider, IDataP
                 tooltip.addLine(Text.literal("Water: " + formattedPercentageWater + "% - " + "Grass: "+ formattedPercentageGrass + "% - " + "Food: "+ formattedPercentageFood + "%" ));
                 tooltip.addLine(Text.literal("Goat Milk: " + formattedPercentageMilk + "% - " + milk_buckets + " Buckets - Productivity: " + (int) milk_productivity + "%"));
             }
+            if (accessor.getEntity() instanceof ChickenEntity) {
+                int egg = data.getInt("photosynthesis_egg");
+                int egg_max = data.getInt("photosynthesis_egg_max");
+
+                float egg_productivity = data.getFloat("photosynthesis_egg_productivity");
+                double eggPercentage = ((double) egg / egg_max) * 100;
+                String formattedPercentageEgg = String.format("%.1f", eggPercentage);
+
+                tooltip.addLine(Text.literal("Age: " + entity_age + " Day's"));
+                tooltip.addLine(Text.literal("Water: " + formattedPercentageWater + "% - " + "Straw: "+ formattedPercentageStraw + "% - " + "Food: "+ formattedPercentageFood + "%" ));
+                tooltip.addLine(Text.literal("Egg: " + formattedPercentageEgg + "% - Productivity: " + (int) egg_productivity + "%"));
+            }
         }
     }
 
@@ -156,6 +166,16 @@ public enum EntityDataStatsComponent implements IEntityComponentProvider, IDataP
             data.raw().putInt("photosynthesis_manure", mod_manure);
             int mod_manure_max = ((getCowStuff) mob).getMod_Manure_Max();
             data.raw().putInt("photosynthesis_manure_max", mod_manure_max);
+        }
+
+        if (accessor.getTarget() instanceof ChickenEntity) {
+            int mod_egg = ((getChickenStuff) mob).getMod_Egg();
+            data.raw().putInt("photosynthesis_egg", mod_egg);
+            int mod_egg_max = ((getChickenStuff) mob).getMod_Egg_Max();
+            data.raw().putInt("photosynthesis_egg_max", mod_egg_max);
+
+            float mod_egg_productivity = ((getChickenStuff) mob).photosynthesis$getChickenProductivity(mod_Water, mod_Water_max, mod_straw, mod_straw_max, mod_food, mod_food_max);
+            data.raw().putFloat("photosynthesis_egg_productivity", mod_egg_productivity);
         }
     }
 }
