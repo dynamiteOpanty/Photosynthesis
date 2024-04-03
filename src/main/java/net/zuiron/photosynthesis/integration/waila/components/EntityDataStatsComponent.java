@@ -6,6 +6,7 @@ import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.text.Text;
 import net.zuiron.photosynthesis.api.Seasons;
+import net.zuiron.photosynthesis.util.getCowStuff;
 import net.zuiron.photosynthesis.util.getCustomVarsPassiveEntity;
 
 public enum EntityDataStatsComponent implements IEntityComponentProvider, IDataProvider<PassiveEntity> {
@@ -74,6 +75,13 @@ public enum EntityDataStatsComponent implements IEntityComponentProvider, IDataP
             tooltip.addLine(Text.literal("Food: "+ formattedPercentageFood + "%" ));
 
             //milk, productivity
+            int milk = data.getInt("photosynthesis_milk");
+            int milk_max = data.getInt("photosynthesis_milk_max");
+            int milk_buckets = data.getInt("photosynthesis_milk_buckets");
+            float milk_productivity = data.getInt("photosynthesis_milk_productivity");
+            double milkPercentage = ((double) milk / milk_max) * 100;
+            String formattedPercentageMilk = String.format("%.1f", milkPercentage);
+            tooltip.addLine(Text.literal("Milk: "+ formattedPercentageMilk + "% - " +milk_buckets + " Buckets - Productivity: "+(int)milk_productivity+"%"));
         }
     }
 
@@ -107,5 +115,19 @@ public enum EntityDataStatsComponent implements IEntityComponentProvider, IDataP
         data.raw().putInt("photosynthesis_food", mod_food);
         int mod_food_max = ((getCustomVarsPassiveEntity) mob).getMod_Food_max();
         data.raw().putInt("photosynthesis_food_max", mod_food_max);
+
+        int mod_milk = ((getCowStuff) mob).getMod_Milk();
+        data.raw().putInt("photosynthesis_milk", mod_milk);
+        int mod_milk_max = ((getCowStuff) mob).getMod_Milk_Max();
+        data.raw().putInt("photosynthesis_milk_max", mod_milk_max);
+        int mod_milk_buckets = ((getCowStuff) mob).photosynthesis$getAvailBucketsMilk();
+        data.raw().putInt("photosynthesis_milk_buckets", mod_milk_buckets);
+        float mod_milk_productivity = ((getCowStuff) mob).photosynthesis$getMilkProductivity(mod_Water, mod_Water_max, mod_grass, mod_grass_max, mod_straw, mod_straw_max, mod_hay, mod_hay_max, mod_food, mod_food_max);
+        data.raw().putFloat("photosynthesis_milk_productivity", mod_milk_productivity);
+
+        int mod_manure = ((getCowStuff) mob).getMod_Manure();
+        data.raw().putInt("photosynthesis_manure", mod_manure);
+        int mod_manure_max = ((getCowStuff) mob).getMod_Manure_Max();
+        data.raw().putInt("photosynthesis_manure_max", mod_manure_max);
     }
 }

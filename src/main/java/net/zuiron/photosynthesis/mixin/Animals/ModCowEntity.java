@@ -19,6 +19,7 @@ import net.zuiron.photosynthesis.Photosynthesis;
 import net.zuiron.photosynthesis.fluid.ModFluids;
 import net.zuiron.photosynthesis.item.ModItems;
 import net.zuiron.photosynthesis.util.ModUtil;
+import net.zuiron.photosynthesis.util.getCowStuff;
 import net.zuiron.photosynthesis.util.getCustomVarsPassiveEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
@@ -29,7 +30,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import java.util.Objects;
 
 @Mixin(CowEntity.class)
-public abstract class ModCowEntity extends AnimalEntity {
+public abstract class ModCowEntity extends AnimalEntity implements getCowStuff {
 
     @Unique
     public int mod_Milk = 0; //this is 4 buckets worth of milk. each grass,hay,straw,food(TMR). adds +1 every tick if above 50%.
@@ -37,9 +38,19 @@ public abstract class ModCowEntity extends AnimalEntity {
     protected final int mod_Milk_max = 96000; //24000 = one bucket.
 
     @Unique
+    public int getMod_Milk() { return this.mod_Milk; }
+    @Unique
+    public int getMod_Milk_Max() { return this.mod_Milk_max; }
+
+    @Unique
     public int mod_Manure = 0;
     @Unique
     protected final int mod_Manure_max = 24000; //drop every mc day.
+
+    @Unique
+    public int getMod_Manure() { return this.mod_Manure; }
+    @Unique
+    public int getMod_Manure_Max() { return this.mod_Manure_max; }
 
     protected ModCowEntity(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
