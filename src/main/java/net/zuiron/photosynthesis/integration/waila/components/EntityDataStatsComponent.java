@@ -37,51 +37,56 @@ public enum EntityDataStatsComponent implements IEntityComponentProvider, IDataP
             long living_ticks = data.getLong("photosynthesis_livingticks");
 
             long entity_age = calculateEntityAgeFromLivingTicks(living_ticks);
-            tooltip.addLine(Text.literal("Age: "+entity_age+" Day's"));
+            //tooltip.addLine(Text.literal("Age: "+entity_age+" Day's"));
 
 
             int water = data.getInt("photosynthesis_water");
             int water_max = data.getInt("photosynthesis_water_max");
             double waterPercentage = ((double) water / water_max) * 100;
             String formattedPercentageWater = String.format("%.1f", waterPercentage);
-            tooltip.addLine(Text.literal("Water: "+ formattedPercentageWater + "%" ));
+            //tooltip.addLine(Text.literal("Water: "+ formattedPercentageWater + "%" ));
 
 
             int grass = data.getInt("photosynthesis_grass");
             int grass_max = data.getInt("photosynthesis_grass_max");
             double grassPercentage = ((double) grass / grass_max) * 100;
             String formattedPercentageGrass = String.format("%.1f", grassPercentage);
-            tooltip.addLine(Text.literal("Grass: "+ formattedPercentageGrass + "%" ));
+            //tooltip.addLine(Text.literal("Grass: "+ formattedPercentageGrass + "%" ));
 
 
             int hay = data.getInt("photosynthesis_hay");
             int hay_max = data.getInt("photosynthesis_hay_max");
             double hayPercentage = ((double) hay / hay_max) * 100;
             String formattedPercentageHay = String.format("%.1f", hayPercentage);
-            tooltip.addLine(Text.literal("Hay: "+ formattedPercentageHay + "%" ));
+            //tooltip.addLine(Text.literal("Hay: "+ formattedPercentageHay + "%" ));
 
 
             int straw = data.getInt("photosynthesis_straw");
             int straw_max = data.getInt("photosynthesis_straw_max");
             double strawPercentage = ((double) straw / straw_max) * 100;
             String formattedPercentageStraw = String.format("%.1f", strawPercentage);
-            tooltip.addLine(Text.literal("Straw: "+ formattedPercentageStraw + "%" ));
+            //tooltip.addLine(Text.literal("Straw: "+ formattedPercentageStraw + "%" ));
 
 
             int food = data.getInt("photosynthesis_food");
             int food_max = data.getInt("photosynthesis_food_max");
             double foodPercentage = ((double) food / food_max) * 100;
             String formattedPercentageFood = String.format("%.1f", foodPercentage);
-            tooltip.addLine(Text.literal("Food: "+ formattedPercentageFood + "%" ));
+            //tooltip.addLine(Text.literal("Food: "+ formattedPercentageFood + "%" ));
+
 
             //milk, productivity
             int milk = data.getInt("photosynthesis_milk");
             int milk_max = data.getInt("photosynthesis_milk_max");
             int milk_buckets = data.getInt("photosynthesis_milk_buckets");
-            float milk_productivity = data.getInt("photosynthesis_milk_productivity");
+            float milk_productivity = data.getFloat("photosynthesis_milk_productivity");
             double milkPercentage = ((double) milk / milk_max) * 100;
             String formattedPercentageMilk = String.format("%.1f", milkPercentage);
-            tooltip.addLine(Text.literal("Milk: "+ formattedPercentageMilk + "% - " +milk_buckets + " Buckets - Productivity: "+(int)milk_productivity+"%"));
+
+
+            tooltip.addLine(Text.literal("Age: " + entity_age + " Day's - " + "Water: " + formattedPercentageWater + "% - " + "Grass: "+ formattedPercentageGrass + "%"));
+            tooltip.addLine(Text.literal("Hay: " + formattedPercentageHay + "% - " + "Straw: "+ formattedPercentageStraw + "% - " + "Food: "+ formattedPercentageFood + "%" ));
+            tooltip.addLine(Text.literal("Milk: " + formattedPercentageMilk + "% - " +milk_buckets + " Buckets - Productivity: "+(int)milk_productivity+"%"));
         }
     }
 
