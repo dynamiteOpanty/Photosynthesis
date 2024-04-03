@@ -25,6 +25,7 @@ import net.zuiron.photosynthesis.config.ModConfig;
 import net.zuiron.photosynthesis.fluid.ModFluids;
 import net.zuiron.photosynthesis.util.ModUtil;
 import net.zuiron.photosynthesis.util.getCustomVarsPassiveEntity;
+import net.zuiron.photosynthesis.util.getGoatStuff;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
@@ -33,7 +34,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(GoatEntity.class)
-public abstract class ModGoatEntity extends AnimalEntity {
+public abstract class ModGoatEntity extends AnimalEntity implements getGoatStuff {
     protected ModGoatEntity(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
     }
@@ -42,6 +43,12 @@ public abstract class ModGoatEntity extends AnimalEntity {
     public int mod_Milk = 0; //this is 4 buckets worth of milk.
     @Unique
     protected final int mod_Milk_max = 96000; //24000 = one bucket.
+
+    @Unique
+    public int getMod_Milk() { return this.mod_Milk; }
+    @Unique
+    public int getMod_Milk_Max() { return this.mod_Milk_max; }
+
     @Inject(method = "mobTick", at = @At("HEAD"), cancellable = false)
     protected void mobTick(CallbackInfo ci) {
         int mod_Water = ((getCustomVarsPassiveEntity) this).getMod_Water();

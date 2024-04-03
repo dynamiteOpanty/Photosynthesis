@@ -2,12 +2,15 @@ package net.zuiron.photosynthesis.integration.waila.components;
 
 import mcp.mobius.waila.api.*;
 import net.minecraft.entity.passive.AnimalEntity;
+import net.minecraft.entity.passive.CowEntity;
+import net.minecraft.entity.passive.GoatEntity;
 import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.text.Text;
 import net.zuiron.photosynthesis.api.Seasons;
 import net.zuiron.photosynthesis.util.getCowStuff;
 import net.zuiron.photosynthesis.util.getCustomVarsPassiveEntity;
+import net.zuiron.photosynthesis.util.getGoatStuff;
 
 public enum EntityDataStatsComponent implements IEntityComponentProvider, IDataProvider<PassiveEntity> {
     INSTANCE;
@@ -84,9 +87,16 @@ public enum EntityDataStatsComponent implements IEntityComponentProvider, IDataP
             String formattedPercentageMilk = String.format("%.1f", milkPercentage);
 
 
+            if (accessor.getEntity() instanceof CowEntity) {
             tooltip.addLine(Text.literal("Age: " + entity_age + " Day's - " + "Water: " + formattedPercentageWater + "% - " + "Grass: "+ formattedPercentageGrass + "%"));
             tooltip.addLine(Text.literal("Hay: " + formattedPercentageHay + "% - " + "Straw: "+ formattedPercentageStraw + "% - " + "Food: "+ formattedPercentageFood + "%" ));
-            tooltip.addLine(Text.literal("Milk: " + formattedPercentageMilk + "% - " +milk_buckets + " Buckets - Productivity: "+(int)milk_productivity+"%"));
+                tooltip.addLine(Text.literal("Cow Milk: " + formattedPercentageMilk + "% - " + milk_buckets + " Buckets - Productivity: " + (int) milk_productivity + "%"));
+            }
+            if (accessor.getEntity() instanceof GoatEntity) {
+                tooltip.addLine(Text.literal("Age: " + entity_age + " Day's"));
+                tooltip.addLine(Text.literal("Water: " + formattedPercentageWater + "% - " + "Grass: "+ formattedPercentageGrass + "% - " + "Food: "+ formattedPercentageFood + "%" ));
+                tooltip.addLine(Text.literal("Goat Milk: " + formattedPercentageMilk + "% - " + milk_buckets + " Buckets - Productivity: " + (int) milk_productivity + "%"));
+            }
         }
     }
 
@@ -121,18 +131,31 @@ public enum EntityDataStatsComponent implements IEntityComponentProvider, IDataP
         int mod_food_max = ((getCustomVarsPassiveEntity) mob).getMod_Food_max();
         data.raw().putInt("photosynthesis_food_max", mod_food_max);
 
-        int mod_milk = ((getCowStuff) mob).getMod_Milk();
-        data.raw().putInt("photosynthesis_milk", mod_milk);
-        int mod_milk_max = ((getCowStuff) mob).getMod_Milk_Max();
-        data.raw().putInt("photosynthesis_milk_max", mod_milk_max);
-        int mod_milk_buckets = ((getCowStuff) mob).photosynthesis$getAvailBucketsMilk();
-        data.raw().putInt("photosynthesis_milk_buckets", mod_milk_buckets);
-        float mod_milk_productivity = ((getCowStuff) mob).photosynthesis$getMilkProductivity(mod_Water, mod_Water_max, mod_grass, mod_grass_max, mod_straw, mod_straw_max, mod_hay, mod_hay_max, mod_food, mod_food_max);
-        data.raw().putFloat("photosynthesis_milk_productivity", mod_milk_productivity);
+        if (accessor.getTarget() instanceof GoatEntity) {
+            int mod_milk = ((getGoatStuff) mob).getMod_Milk();
+            data.raw().putInt("photosynthesis_milk", mod_milk);
+            int mod_milk_max = ((getGoatStuff) mob).getMod_Milk_Max();
+            data.raw().putInt("photosynthesis_milk_max", mod_milk_max);
+            int mod_milk_buckets = ((getGoatStuff) mob).photosynthesis$getAvailBucketsMilk();
+            data.raw().putInt("photosynthesis_milk_buckets", mod_milk_buckets);
+            float mod_milk_productivity = ((getGoatStuff) mob).photosynthesis$getMilkProductivity(mod_Water, mod_Water_max, mod_grass, mod_grass_max, mod_food, mod_food_max);
+            data.raw().putFloat("photosynthesis_milk_productivity", mod_milk_productivity);
+        }
 
-        int mod_manure = ((getCowStuff) mob).getMod_Manure();
-        data.raw().putInt("photosynthesis_manure", mod_manure);
-        int mod_manure_max = ((getCowStuff) mob).getMod_Manure_Max();
-        data.raw().putInt("photosynthesis_manure_max", mod_manure_max);
+        if (accessor.getTarget() instanceof CowEntity) {
+            int mod_milk = ((getCowStuff) mob).getMod_Milk();
+            data.raw().putInt("photosynthesis_milk", mod_milk);
+            int mod_milk_max = ((getCowStuff) mob).getMod_Milk_Max();
+            data.raw().putInt("photosynthesis_milk_max", mod_milk_max);
+            int mod_milk_buckets = ((getCowStuff) mob).photosynthesis$getAvailBucketsMilk();
+            data.raw().putInt("photosynthesis_milk_buckets", mod_milk_buckets);
+            float mod_milk_productivity = ((getCowStuff) mob).photosynthesis$getMilkProductivity(mod_Water, mod_Water_max, mod_grass, mod_grass_max, mod_straw, mod_straw_max, mod_hay, mod_hay_max, mod_food, mod_food_max);
+            data.raw().putFloat("photosynthesis_milk_productivity", mod_milk_productivity);
+
+            int mod_manure = ((getCowStuff) mob).getMod_Manure();
+            data.raw().putInt("photosynthesis_manure", mod_manure);
+            int mod_manure_max = ((getCowStuff) mob).getMod_Manure_Max();
+            data.raw().putInt("photosynthesis_manure_max", mod_manure_max);
+        }
     }
 }
