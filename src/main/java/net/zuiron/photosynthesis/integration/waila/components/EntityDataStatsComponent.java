@@ -39,13 +39,11 @@ public enum EntityDataStatsComponent implements IEntityComponentProvider, IDataP
             tooltip.addLine(Text.literal("Age: "+entity_age+" Day's"));
 
 
-
             int water = data.getInt("photosynthesis_water");
             int water_max = data.getInt("photosynthesis_water_max");
             double waterPercentage = ((double) water / water_max) * 100;
             String formattedPercentageWater = String.format("%.1f", waterPercentage);
             tooltip.addLine(Text.literal("Water: "+ formattedPercentageWater + "%" ));
-
 
 
             int grass = data.getInt("photosynthesis_grass");
@@ -55,12 +53,27 @@ public enum EntityDataStatsComponent implements IEntityComponentProvider, IDataP
             tooltip.addLine(Text.literal("Grass: "+ formattedPercentageGrass + "%" ));
 
 
-
             int hay = data.getInt("photosynthesis_hay");
             int hay_max = data.getInt("photosynthesis_hay_max");
             double hayPercentage = ((double) hay / hay_max) * 100;
             String formattedPercentageHay = String.format("%.1f", hayPercentage);
             tooltip.addLine(Text.literal("Hay: "+ formattedPercentageHay + "%" ));
+
+
+            int straw = data.getInt("photosynthesis_straw");
+            int straw_max = data.getInt("photosynthesis_straw_max");
+            double strawPercentage = ((double) straw / straw_max) * 100;
+            String formattedPercentageStraw = String.format("%.1f", strawPercentage);
+            tooltip.addLine(Text.literal("Straw: "+ formattedPercentageStraw + "%" ));
+
+
+            int food = data.getInt("photosynthesis_food");
+            int food_max = data.getInt("photosynthesis_food_max");
+            double foodPercentage = ((double) food / food_max) * 100;
+            String formattedPercentageFood = String.format("%.1f", foodPercentage);
+            tooltip.addLine(Text.literal("Food: "+ formattedPercentageFood + "%" ));
+
+            //milk, productivity
         }
     }
 
@@ -84,5 +97,15 @@ public enum EntityDataStatsComponent implements IEntityComponentProvider, IDataP
         data.raw().putInt("photosynthesis_hay", mod_hay);
         int mod_hay_max = ((getCustomVarsPassiveEntity) mob).getMod_Hay_max();
         data.raw().putInt("photosynthesis_hay_max", mod_hay_max);
+
+        int mod_straw = ((getCustomVarsPassiveEntity) mob).getMod_Straw();
+        data.raw().putInt("photosynthesis_straw", mod_straw);
+        int mod_straw_max = ((getCustomVarsPassiveEntity) mob).getMod_Straw_max();
+        data.raw().putInt("photosynthesis_straw_max", mod_straw_max);
+
+        int mod_food = ((getCustomVarsPassiveEntity) mob).getMod_Food();
+        data.raw().putInt("photosynthesis_food", mod_food);
+        int mod_food_max = ((getCustomVarsPassiveEntity) mob).getMod_Food_max();
+        data.raw().putInt("photosynthesis_food_max", mod_food_max);
     }
 }
