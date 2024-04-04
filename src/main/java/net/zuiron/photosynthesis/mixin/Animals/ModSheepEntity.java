@@ -17,6 +17,7 @@ import net.minecraft.world.World;
 import net.zuiron.photosynthesis.fluid.ModFluids;
 import net.zuiron.photosynthesis.util.ModUtil;
 import net.zuiron.photosynthesis.util.getCustomVarsPassiveEntity;
+import net.zuiron.photosynthesis.util.getSheepStuff;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
@@ -26,7 +27,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(SheepEntity.class)
-public abstract class ModSheepEntity extends AnimalEntity {
+public abstract class ModSheepEntity extends AnimalEntity implements getSheepStuff {
     protected ModSheepEntity(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
     }
@@ -35,6 +36,11 @@ public abstract class ModSheepEntity extends AnimalEntity {
     public int mod_Wool = 0;
     @Unique
     protected final int mod_Wool_max = 48000; //24000 == 1 mc day. (max every other per mc day at MAX productivity.)
+
+    @Unique
+    public int getMod_Wool() { return this.mod_Wool; }
+    @Unique
+    public int getMod_Wool_Max() { return this.mod_Wool_max; }
 
     @Shadow public abstract void setSheared(boolean sheared);
 

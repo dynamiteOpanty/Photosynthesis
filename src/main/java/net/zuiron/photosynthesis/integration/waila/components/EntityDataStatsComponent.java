@@ -5,10 +5,7 @@ import net.minecraft.entity.passive.*;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.text.Text;
 import net.zuiron.photosynthesis.api.Seasons;
-import net.zuiron.photosynthesis.util.getChickenStuff;
-import net.zuiron.photosynthesis.util.getCowStuff;
-import net.zuiron.photosynthesis.util.getCustomVarsPassiveEntity;
-import net.zuiron.photosynthesis.util.getGoatStuff;
+import net.zuiron.photosynthesis.util.*;
 
 public enum EntityDataStatsComponent implements IEntityComponentProvider, IDataProvider<PassiveEntity> {
     INSTANCE;
@@ -116,7 +113,15 @@ public enum EntityDataStatsComponent implements IEntityComponentProvider, IDataP
                 tooltip.addLine(Text.literal("Water: " + formattedPercentageWater + "% - " + "Straw: "+ formattedPercentageStraw + "% - " + "Food: "+ formattedPercentageFood + "%" ));
             }
             if (accessor.getEntity() instanceof SheepEntity) {
+                int wool = data.getInt("photosynthesis_wool");
+                int wool_max = data.getInt("photosynthesis_wool_max");
+
+                float wool_productivity = data.getFloat("photosynthesis_wool_productivity");
+                double woolPercentage = ((double) wool / wool_max) * 100;
+                String formattedPercentageWool = String.format("%.1f", woolPercentage);
+
                 tooltip.addLine(Text.literal("Age: " + entity_age + " Day's - " + "Water: " + formattedPercentageWater + "% - " + "Grass: "+ formattedPercentageGrass + "%"));
+                tooltip.addLine(Text.literal("Wool: " + formattedPercentageWool + "% - Productivity: " + (int) wool_productivity + "%"));
             }
         }
     }
@@ -187,6 +192,16 @@ public enum EntityDataStatsComponent implements IEntityComponentProvider, IDataP
 
             float mod_egg_productivity = ((getChickenStuff) mob).photosynthesis$getChickenProductivity(mod_Water, mod_Water_max, mod_straw, mod_straw_max, mod_food, mod_food_max);
             data.raw().putFloat("photosynthesis_egg_productivity", mod_egg_productivity);
+        }
+
+        if (accessor.getTarget() instanceof SheepEntity) {
+            int mod_wool = ((getSheepStuff) mob).getMod_Wool();
+            data.raw().putInt("photosynthesis_wool", mod_wool);
+            int mod_wool_max = ((getSheepStuff) mob).getMod_Wool_Max();
+            data.raw().putInt("photosynthesis_wool_max", mod_wool_max);
+
+            float mod_wool_productivity = ((getSheepStuff) mob).photosynthesis$getWoolProductivity(mod_Water, mod_Water_max, mod_grass, mod_grass_max);
+            data.raw().putFloat("photosynthesis_wool_productivity", mod_wool_productivity);
         }
     }
 }
