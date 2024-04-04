@@ -25,6 +25,7 @@ public class WailaPlugin implements IWailaPlugin {
         registrar.addComponent(EntityDataStatsComponent.INSTANCE, BODY, CowEntity.class);
         registrar.addComponent(EntityDataStatsComponent.INSTANCE, BODY, GoatEntity.class);
         registrar.addComponent(EntityDataStatsComponent.INSTANCE, BODY, ChickenEntity.class);
+        registrar.addComponent(EntityDataStatsComponent.INSTANCE, BODY, HorseEntity.class);
 
         registrar.addEntityData(EntityDataStatsComponent.INSTANCE, PassiveEntity.class);
     }

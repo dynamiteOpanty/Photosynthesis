@@ -107,6 +107,10 @@ public enum EntityDataStatsComponent implements IEntityComponentProvider, IDataP
                 tooltip.addLine(Text.literal("Water: " + formattedPercentageWater + "% - " + "Straw: "+ formattedPercentageStraw + "% - " + "Food: "+ formattedPercentageFood + "%" ));
                 tooltip.addLine(Text.literal("Egg: " + formattedPercentageEgg + "% - Productivity: " + (int) egg_productivity + "%"));
             }
+            if (accessor.getEntity() instanceof HorseEntity) {
+                tooltip.addLine(Text.literal("Age: " + entity_age + " Day's - " + "Water: " + formattedPercentageWater + "%"));
+                tooltip.addLine(Text.literal("Hay: " + formattedPercentageHay + "% - " + "Straw: "+ formattedPercentageStraw + "% - " + "Food: "+ formattedPercentageFood + "%" ));
+            }
         }
     }
 
