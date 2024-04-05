@@ -11,9 +11,8 @@ import net.zuiron.photosynthesis.integration.waila.components.EntityDataStatsCom
 import net.zuiron.photosynthesis.integration.waila.components.FertPestComponent;
 
 import static mcp.mobius.waila.api.TooltipPosition.BODY;
-import static mcp.mobius.waila.api.TooltipPosition.TAIL;
 
-public class WailaPlugin implements IWailaPlugin {
+public class wailaplugin implements IWailaPlugin {
 
     @Override
     public void register(IRegistrar registrar) {
