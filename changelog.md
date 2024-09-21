@@ -21,6 +21,7 @@ Photosynthesis 1.20.1-0.0.22
   - Bacon Bits
   - Raisin
 - Updated texture for cranberries
+- fixed some textures not being 16x16
 
 Photosynthesis 1.20.1-0.0.21
 - Maple Extractor block animation added.
