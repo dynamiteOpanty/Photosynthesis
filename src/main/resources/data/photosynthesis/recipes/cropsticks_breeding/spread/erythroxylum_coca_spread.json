@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:erythroxylum_coca_seeds"
+    },
+    {
+      "item": "photosynthesis:erythroxylum_coca_seeds"
+    },
+    {
+      "item": "minecraft:farmland"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:erythroxylum_coca_seeds"
+  },
+  "cookingtime": 300,
+  "chance": 50.0
+}

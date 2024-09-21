@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:floramelissia_seeds"
+    },
+    {
+      "item": "photosynthesis:floramelissia_seeds"
+    },
+    {
+      "item": "minecraft:grass_block"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:floramelissia_seeds"
+  },
+  "cookingtime": 300,
+  "chance": 50.0
+}

@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:kenaf_seeds"
+    },
+    {
+      "item": "photosynthesis:kenaf_seeds"
+    },
+    {
+      "item": "minecraft:farmland"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:kenaf_seeds"
+  },
+  "cookingtime": 300,
+  "chance": 50.0
+}

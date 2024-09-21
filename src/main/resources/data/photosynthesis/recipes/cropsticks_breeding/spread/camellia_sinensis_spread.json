@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:camellia_sinensis_seeds"
+    },
+    {
+      "item": "photosynthesis:camellia_sinensis_seeds"
+    },
+    {
+      "item": "minecraft:farmland"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:camellia_sinensis_seeds"
+  },
+  "cookingtime": 300,
+  "chance": 50.0
+}

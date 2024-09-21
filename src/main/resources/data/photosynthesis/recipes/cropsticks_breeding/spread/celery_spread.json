@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:celery_seeds"
+    },
+    {
+      "item": "photosynthesis:celery_seeds"
+    },
+    {
+      "item": "minecraft:farmland"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:celery_seeds"
+  },
+  "cookingtime": 300,
+  "chance": 50.0
+}

@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:strawberry_seeds"
+    },
+    {
+      "item": "photosynthesis:strawberry_seeds"
+    },
+    {
+      "item": "minecraft:farmland"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:strawberry_seeds"
+  },
+  "cookingtime": 300,
+  "chance": 50.0
+}

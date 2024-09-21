@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:parsnip_seeds"
+    },
+    {
+      "item": "photosynthesis:parsnip_seeds"
+    },
+    {
+      "item": "minecraft:farmland"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:parsnip_seeds"
+  },
+  "cookingtime": 300,
+  "chance": 50.0
+}

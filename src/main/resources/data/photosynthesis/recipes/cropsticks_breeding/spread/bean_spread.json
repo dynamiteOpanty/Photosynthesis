@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:bean_seeds"
+    },
+    {
+      "item": "photosynthesis:bean_seeds"
+    },
+    {
+      "item": "minecraft:farmland"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:bean_seeds"
+  },
+  "cookingtime": 300,
+  "chance": 50.0
+}

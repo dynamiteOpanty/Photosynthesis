@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:wither_rose_seeds"
+    },
+    {
+      "item": "photosynthesis:wither_rose_seeds"
+    },
+    {
+      "item": "minecraft:grass_block"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:wither_rose_seeds"
+  },
+  "cookingtime": 300,
+  "chance": 50.0
+}

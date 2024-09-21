@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:zucchini_seeds"
+    },
+    {
+      "item": "photosynthesis:zucchini_seeds"
+    },
+    {
+      "item": "minecraft:farmland"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:zucchini_seeds"
+  },
+  "cookingtime": 300,
+  "chance": 50.0
+}

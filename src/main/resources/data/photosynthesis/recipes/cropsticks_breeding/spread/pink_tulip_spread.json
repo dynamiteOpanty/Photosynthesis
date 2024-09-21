@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:pink_tulip_seeds"
+    },
+    {
+      "item": "photosynthesis:pink_tulip_seeds"
+    },
+    {
+      "item": "minecraft:grass_block"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:pink_tulip_seeds"
+  },
+  "cookingtime": 300,
+  "chance": 50.0
+}

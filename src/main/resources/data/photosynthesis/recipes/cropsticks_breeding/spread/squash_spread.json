@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:squash_seeds"
+    },
+    {
+      "item": "photosynthesis:squash_seeds"
+    },
+    {
+      "item": "minecraft:farmland"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:squash_seeds"
+  },
+  "cookingtime": 300,
+  "chance": 50.0
+}

@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:cactus_fruit_seeds"
+    },
+    {
+      "item": "photosynthesis:cactus_fruit_seeds"
+    },
+    {
+      "item": "minecraft:farmland"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:cactus_fruit_seeds"
+  },
+  "cookingtime": 300,
+  "chance": 50.0
+}

@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:cornflower_seeds"
+    },
+    {
+      "item": "photosynthesis:cornflower_seeds"
+    },
+    {
+      "item": "minecraft:grass_block"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:cornflower_seeds"
+  },
+  "cookingtime": 300,
+  "chance": 50.0
+}

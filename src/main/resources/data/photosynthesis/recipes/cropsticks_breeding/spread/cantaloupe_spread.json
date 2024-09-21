@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:cantaloupe_seeds"
+    },
+    {
+      "item": "photosynthesis:cantaloupe_seeds"
+    },
+    {
+      "item": "minecraft:farmland"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:cantaloupe_seeds"
+  },
+  "cookingtime": 300,
+  "chance": 50.0
+}

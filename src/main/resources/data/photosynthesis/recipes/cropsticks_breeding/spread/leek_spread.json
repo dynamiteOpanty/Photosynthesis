@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:leek_seeds"
+    },
+    {
+      "item": "photosynthesis:leek_seeds"
+    },
+    {
+      "item": "minecraft:farmland"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:leek_seeds"
+  },
+  "cookingtime": 300,
+  "chance": 50.0
+}

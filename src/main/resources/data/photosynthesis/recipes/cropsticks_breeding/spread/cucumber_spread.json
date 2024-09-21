@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:cucumber_seeds"
+    },
+    {
+      "item": "photosynthesis:cucumber_seeds"
+    },
+    {
+      "item": "minecraft:farmland"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:cucumber_seeds"
+  },
+  "cookingtime": 300,
+  "chance": 50.0
+}

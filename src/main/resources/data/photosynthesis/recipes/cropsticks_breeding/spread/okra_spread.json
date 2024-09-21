@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:okra_seeds"
+    },
+    {
+      "item": "photosynthesis:okra_seeds"
+    },
+    {
+      "item": "minecraft:farmland"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:okra_seeds"
+  },
+  "cookingtime": 300,
+  "chance": 50.0
+}

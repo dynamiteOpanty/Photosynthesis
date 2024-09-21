@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:mint_seeds"
+    },
+    {
+      "item": "photosynthesis:mint_seeds"
+    },
+    {
+      "item": "minecraft:farmland"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:mint_seeds"
+  },
+  "cookingtime": 300,
+  "chance": 50.0
+}

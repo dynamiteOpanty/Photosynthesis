@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:poppy_seeds"
+    },
+    {
+      "item": "photosynthesis:poppy_seeds"
+    },
+    {
+      "item": "minecraft:grass_block"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:poppy_seeds"
+  },
+  "cookingtime": 300,
+  "chance": 50.0
+}

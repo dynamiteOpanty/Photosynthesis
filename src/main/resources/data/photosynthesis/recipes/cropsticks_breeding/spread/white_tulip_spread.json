@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:white_tulip_seeds"
+    },
+    {
+      "item": "photosynthesis:white_tulip_seeds"
+    },
+    {
+      "item": "minecraft:grass_block"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:white_tulip_seeds"
+  },
+  "cookingtime": 300,
+  "chance": 50.0
+}

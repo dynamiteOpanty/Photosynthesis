@@ -1,0 +1,19 @@
+{
+  "type": "photosynthesis:cropsticks",
+  "ingredients": [
+    {
+      "item": "photosynthesis:sugarbeet_seeds"
+    },
+    {
+      "item": "photosynthesis:sugarbeet_seeds"
+    },
+    {
+      "item": "minecraft:farmland"
+    }
+  ],
+  "output": {
+    "item": "photosynthesis:sugarbeet_seeds"
+  },
+  "cookingtime": 300,
+  "chance": 50.0
+}
