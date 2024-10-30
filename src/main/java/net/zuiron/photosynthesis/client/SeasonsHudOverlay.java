@@ -132,7 +132,9 @@ public class SeasonsHudOverlay implements HudRenderCallback {
                         5, 11);
 
                 // Get the text to display
-                String text = String.format(String.valueOf(Text.translatable("text.photosynthesis.seasons.center_display").getString()), getSeasonName, daysRemaining - 1);
+                //this is working, in the en_us lang, named __OLD. but somehow journeymap is making this not work. no idea why. anyway working around it.
+                //String text = String.format(String.valueOf(Text.translatable("text.photosynthesis.seasons.center_display").getString()), getSeasonName, daysRemaining - 1);
+                String text = getSeasonName+" ("+(daysRemaining - 1)+" "+Text.translatable("text.photosynthesis.seasons.center_display").getString()+")";
 
                 float seasonTimelineTextScale = config.seasonTimelineTextScale;
 
@@ -167,15 +169,22 @@ public class SeasonsHudOverlay implements HudRenderCallback {
 
                 //String text = String.format(String.valueOf(Text.translatable("text.photosynthesis.seasons.center_display").getString()), getSeasonName, daysRemaining - 1);
                 //String text_season_1 = String.format("Day: %d/%d, Year: %d", dayOfYear + 1, daysPerYear, getYear);
-                String text_season_1 = String.format(String.valueOf(Text.translatable("text.photosynthesis.seasons.left_display_1").getString()), dayOfYear + 1, daysPerYear, getYear);
-                text_season_1.formatted(Formatting.BOLD);
+
+                //this is working, in the en_us lang, named __OLD. but somehow journeymap is making this not work. no idea why. anyway working around it.
+                //String text_season_1 = String.format(String.valueOf(Text.translatable("text.photosynthesis.seasons.left_display_1").getString()), dayOfYear + 1, daysPerYear, getYear);
+                String text_season_1 = Text.translatable("text.photosynthesis.seasons.left_display_1").getString()+(dayOfYear + 1)+"/"+daysPerYear+", "+Text.translatable("text.photosynthesis.seasons.left_display_2").getString()+getYear;
+
+                        text_season_1.formatted(Formatting.BOLD);
                 context.getMatrices().push();
                 context.getMatrices().scale(textScale, textScale, 1.0f);
                 context.drawTextWithShadow(textRenderer, text_season_1, 10+textXOffset, y_text_1+textYOffset, 0xFFFFFF);
                 context.getMatrices().pop();
 
                 //String text_season_2 = String.format("%s - Day: %d/%d", getSeasonName, dayInSeason + 1, daysPerSeasonMod);
-                String text_season_2 = String.format(String.valueOf(Text.translatable("text.photosynthesis.seasons.left_display_2").getString()), getSeasonName, dayInSeason + 1, daysPerSeasonMod);
+
+                //this is working, in the en_us lang, named __OLD. but somehow journeymap is making this not work. no idea why. anyway working around it.
+                //String text_season_2 = String.format(String.valueOf(Text.translatable("text.photosynthesis.seasons.left_display_2").getString()), getSeasonName, dayInSeason + 1, daysPerSeasonMod);
+                String text_season_2 = getSeasonName+" - "+Text.translatable("text.photosynthesis.seasons.left_display_1").getString()+(dayInSeason + 1)+"/"+daysPerSeasonMod;
                 text_season_2.formatted(Formatting.BOLD);
                 context.getMatrices().push();
                 context.getMatrices().scale(textScale, textScale, 1.0f);

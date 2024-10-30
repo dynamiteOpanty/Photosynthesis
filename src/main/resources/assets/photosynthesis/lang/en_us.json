@@ -12,9 +12,13 @@
   "text.photosynthesis.seasons.autumn": "Autumn",
   "text.photosynthesis.seasons.winter": "Winter",
 
-  "text.photosynthesis.seasons.center_display": "%s (%d days remaining)",
-  "text.photosynthesis.seasons.left_display_1": "Day: %d/%d, Year: %d",
-  "text.photosynthesis.seasons.left_display_2": "%s - Day: %d/%d",
+  "text.photosynthesis.seasons.center_display": "days remaining",
+  "text.photosynthesis.seasons.left_display_1": "Day: ",
+  "text.photosynthesis.seasons.left_display_2": "Year: ",
+
+  "text.photosynthesis.seasons.center_display__OLD": "%s (%d days remaining)",
+  "text.photosynthesis.seasons.left_display_1__OLD": "Day: %d/%d, Year: %d",
+  "text.photosynthesis.seasons.left_display_2__OLD": "%s - Day: %d/%d",
 
   "text.photosynthesis.tooltip.manurebucket": "Picks up manure on the ground 10x10x10 radius.",
   "text.photosynthesis.tooltip.eggbasket": "Picks up eggs on the ground 10x10x10 radius.",
