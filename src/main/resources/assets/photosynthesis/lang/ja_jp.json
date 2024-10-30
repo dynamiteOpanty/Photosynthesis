@@ -12,9 +12,13 @@
   "text.photosynthesis.seasons.autumn": "秋",
   "text.photosynthesis.seasons.winter": "冬",
 
-  "text.photosynthesis.seasons.center_display": "%s (残り%d)",
-  "text.photosynthesis.seasons.left_display_1": "%%d/%d日 %d年目",
-  "text.photosynthesis.seasons.left_display_2": "%s - %d/%d日",
+  "text.photosynthesis.seasons.center_display": "残り日数",
+  "text.photosynthesis.seasons.left_display_1": "日: ",
+  "text.photosynthesis.seasons.left_display_2": "年: ",
+
+  "text.photosynthesis.seasons.center_display__OLD": "%s (残り%d)",
+  "text.photosynthesis.seasons.left_display_1__OLD": "%%d/%d日 %d年目",
+  "text.photosynthesis.seasons.left_display_2__OLD": "%s - %d/%d日",
 
   "text.photosynthesis.tooltip.manurebucket": "範囲10x10x10内の地面上の肥料を回収します。",
   "text.photosynthesis.tooltip.eggbasket": "範囲10x10x10内の地面上の卵を回収します。",
