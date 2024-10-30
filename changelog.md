@@ -1,4 +1,6 @@
 # Changelog
+Photosynthesis 1.20.1-0.0.23
+- Fixed compatability issues with Journey Map, HUD is now working again.
 
 Photosynthesis 1.20.1-0.0.22
 - Added missing translations.
