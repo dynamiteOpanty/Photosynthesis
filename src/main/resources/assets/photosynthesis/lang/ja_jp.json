@@ -39,7 +39,7 @@
 
   "text.photosynthesis.tooltip.leather_water_bladder": "水に右クリックして補充",
 
-  "text.photosynthesis.tooltip.seasons_calendar_1": "レンチで右クリックしてレッドストーンインジケーターをオンにします。",
+  "text.photosynthesis.tooltip.seasons_calendar_1": "レンチで右クリックしてレッドストーン出力をオンにします。",
   "text.photosynthesis.tooltip.seasons_calendar_2": "オンになると、年ごとの日数に応じて信号を出力します。",
 
   "text.photosynthesis.tooltip.wrench": "機材の挙動を変更します。",
@@ -50,7 +50,7 @@
   "text.photosynthesis.tooltip.slot_lock": "スロットロック: ",
 
   "text.photosynthesis.tooltip.item_uses": "残り: ",
-  "text.photosynthesis.tooltip.glass_of_milk": "ステータスフェクトを全て除去します。",
+  "text.photosynthesis.tooltip.glass_of_milk": "ステータス効果を全て除去します。",
 
   "text.photosynthesis.tooltip.animal_pig1": "必要: 水、餌。任意: 藁",
   "text.photosynthesis.tooltip.animal_pig2": "餌: 小麦、大麦、コーン、大豆、キャノーラ、ポテト、テンサイ",
@@ -58,7 +58,7 @@
   "text.photosynthesis.tooltip.animal_chicken2": "餌: 小麦、大麦",
   "text.photosynthesis.tooltip.animal_goat1": "必要: 水、草、餌",
   "text.photosynthesis.tooltip.animal_goat2": "餌: 苗木、葉",
-  "text.photosynthesis.tooltip.animal_cow1": "必要: 水、草、干し草。任意:食糧/全混合飼料、藁",
+  "text.photosynthesis.tooltip.animal_cow1": "必要: 水、草、干し草。任意:餌/全混合飼料、藁",
   "text.photosynthesis.tooltip.animal_cow2": "餌(任意):全混合飼料",
   "text.photosynthesis.tooltip.animal_sheep1": "必要: 水、草",
   "text.photosynthesis.tooltip.animal_horse1": "必要: 水、干し草、餌。任意: 藁",
@@ -156,7 +156,7 @@
   "text.autoconfig.photosynthesis.option.seasonDisplayInfo": "季節情報の表示",
   "text.autoconfig.photosynthesis.option.seasonDisplayInfo.@Tooltip": "画面左上、季節のアイコンの下に季節の情報を表示します。",
   "text.autoconfig.photosynthesis.option.seasonDisplayInfoScale": "季節の情報の文字の大きさ",
-  "text.autoconfig.photosynthesis.option.seasonDisplayInfoXOffset": "季節の情報の文字の位置",
+  "text.autoconfig.photosynthesis.option.seasonDisplayInfoXOffset": "季節の情報の文字の左右",
   "text.autoconfig.photosynthesis.option.seasonDisplayInfoYOffset": "季節の情報の文字の高さ",
 
   "effect.photosynthesis.dehydrated": "渇き",
@@ -334,10 +334,10 @@
   "block.photosynthesis.latex_block": "ラテックス",
   "item.photosynthesis.latex_bucket": "ラテックス入りバケツ",
 
-  "block.photosynthesis.mead": "蜂蜜酒",
-  "block.photosynthesis.mead_block": "蜂蜜酒",
-  "item.photosynthesis.mead_bucket": "蜂蜜酒入りバケツ",
-  "item.photosynthesis.measuring_cup_mead": "蜂蜜酒入り計量カップ",
+  "block.photosynthesis.mead": "ミード",
+  "block.photosynthesis.mead_block": "ミード",
+  "item.photosynthesis.mead_bucket": "ミード入りバケツ",
+  "item.photosynthesis.measuring_cup_mead": "ミード入り計量カップ",
 
   "block.photosynthesis.maple": "カエデの樹液",
   "block.photosynthesis.maple_block": "カエデの樹液",
@@ -610,7 +610,7 @@
   "block.photosynthesis.cashewtree_planks": "カシューの板材",
   "block.photosynthesis.cashewtree_leaves": "カシューの葉",
   "block.photosynthesis.cashewtree_sapling": "カシューの苗木",
-  "block.photosynthesis.cashewtree_bushcrop": "カシュー",
+  "block.photosynthesis.cashewtree_bushcrop": "カシューナッツ",
   "item.photosynthesis.cashew": "カシュー",
 
   "block.photosynthesis.datetree_log": "ナツメヤシの原木",
@@ -1253,7 +1253,7 @@
   "item.photosynthesis.wheat_dough": "小麦生地",
 
   "item.photosynthesis.mug": "マグ",
-  "item.photosynthesis.mug_mead": "蜂蜜酒入りマグ",
+  "item.photosynthesis.mug_mead": "ミード入りマグ",
   "item.photosynthesis.mug_water": "水入りマグ",
 
   "item.photosynthesis.leather_water_bladder": "空の革袋",
@@ -1297,11 +1297,11 @@
   "item.photosynthesis.wolf_pelt": "オオカミの毛皮",
 
 
-  "item.photosynthesis.squeezer_part": "スクイーザー部分",
+  "item.photosynthesis.squeezer_part": "スクイーザーのパーツ",
   "item.photosynthesis.cutting_knife_blade": "ナイフの刃",
   "item.photosynthesis.cutting_knife_handle": "ナイフのハンドル",
   "item.photosynthesis.whisk_handle": "泡立て器のハンドル",
-  "item.photosynthesis.whisk_part": "泡立て器部分",
+  "item.photosynthesis.whisk_part": "泡立て器のパーツ",
   "item.photosynthesis.mortar": "臼",
   "item.photosynthesis.pestle": "乳棒",
   "item.photosynthesis.rolling_pin_part": "麺棒部分",
@@ -1423,7 +1423,7 @@
   "block.photosynthesis.manure_bucket": "肥やしバケツ",
 
   "item.photosynthesis.slot_lock_locked": "ロック",
-  "item.photosynthesis.slot_lock_unlocked": "解除",
+  "item.photosynthesis.slot_lock_unlocked": "解除済み",
   "item.photosynthesis.debug_item": "デバッグツール",
 
   "entity.minecraft.villager.livestocktrader": "家畜トレーダー",
