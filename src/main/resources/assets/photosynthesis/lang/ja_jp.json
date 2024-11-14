@@ -12,9 +12,13 @@
   "text.photosynthesis.seasons.autumn": "秋",
   "text.photosynthesis.seasons.winter": "冬",
 
-  "text.photosynthesis.seasons.center_display": "%s (残り%d)",
-  "text.photosynthesis.seasons.left_display_1": "%%d/%d日 %d年目",
-  "text.photosynthesis.seasons.left_display_2": "%s - %d/%d日",
+  "text.photosynthesis.seasons.center_display": "日後終了",
+  "text.photosynthesis.seasons.left_display_1": "日: ",
+  "text.photosynthesis.seasons.left_display_2": "年: ",
+
+  "text.photosynthesis.seasons.center_display__OLD": "%s (残り%d)",
+  "text.photosynthesis.seasons.left_display_1__OLD": "%%d/%d日 %d年目",
+  "text.photosynthesis.seasons.left_display_2__OLD": "%s - %d/%d日",
 
   "text.photosynthesis.tooltip.manurebucket": "範囲10x10x10内の地面上の肥料を回収します。",
   "text.photosynthesis.tooltip.eggbasket": "範囲10x10x10内の地面上の卵を回収します。",
@@ -35,7 +39,7 @@
 
   "text.photosynthesis.tooltip.leather_water_bladder": "水に右クリックして補充",
 
-  "text.photosynthesis.tooltip.seasons_calendar_1": "レンチで右クリックしてレッドストーンインジケーターをオンにします。",
+  "text.photosynthesis.tooltip.seasons_calendar_1": "レンチで右クリックしてレッドストーン出力をオンにします。",
   "text.photosynthesis.tooltip.seasons_calendar_2": "オンになると、年ごとの日数に応じて信号を出力します。",
 
   "text.photosynthesis.tooltip.wrench": "機材の挙動を変更します。",
@@ -46,7 +50,7 @@
   "text.photosynthesis.tooltip.slot_lock": "スロットロック: ",
 
   "text.photosynthesis.tooltip.item_uses": "残り: ",
-  "text.photosynthesis.tooltip.glass_of_milk": "ステータスフェクトを全て除去します。",
+  "text.photosynthesis.tooltip.glass_of_milk": "ステータス効果を全て除去します。",
 
   "text.photosynthesis.tooltip.animal_pig1": "必要: 水、餌。任意: 藁",
   "text.photosynthesis.tooltip.animal_pig2": "餌: 小麦、大麦、コーン、大豆、キャノーラ、ポテト、テンサイ",
@@ -54,7 +58,7 @@
   "text.photosynthesis.tooltip.animal_chicken2": "餌: 小麦、大麦",
   "text.photosynthesis.tooltip.animal_goat1": "必要: 水、草、餌",
   "text.photosynthesis.tooltip.animal_goat2": "餌: 苗木、葉",
-  "text.photosynthesis.tooltip.animal_cow1": "必要: 水、草、干し草。任意:食糧/全混合飼料、藁",
+  "text.photosynthesis.tooltip.animal_cow1": "必要: 水、草、干し草。任意:餌/全混合飼料、藁",
   "text.photosynthesis.tooltip.animal_cow2": "餌(任意):全混合飼料",
   "text.photosynthesis.tooltip.animal_sheep1": "必要: 水、草",
   "text.photosynthesis.tooltip.animal_horse1": "必要: 水、干し草、餌。任意: 藁",
@@ -77,11 +81,11 @@
   "text.autoconfig.photosynthesis.title": "Photosynthesisコンフィグ",
   "text.autoconfig.photosynthesis.option.thirst.@PrefixText": "渇き",
   "text.autoconfig.photosynthesis.option.thirst": "渇きを有効にする",
-  "text.autoconfig.photosynthesis.option.thirst.@Tooltip": "'YES'で有効。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
+  "text.autoconfig.photosynthesis.option.thirst.@Tooltip": "YESで有効。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
 
   "text.autoconfig.photosynthesis.option.seasons.@PrefixText": "季節",
   "text.autoconfig.photosynthesis.option.seasons": "季節を有効にする",
-  "text.autoconfig.photosynthesis.option.seasons.@Tooltip": "'YES'で有効。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
+  "text.autoconfig.photosynthesis.option.seasons.@Tooltip": "YESで有効。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
   "text.autoconfig.photosynthesis.option.daysPerSeason": "季節ごとの日数",
   "text.autoconfig.photosynthesis.option.daysPerSeason.@Tooltip": "季節の長さ。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
 
@@ -93,52 +97,52 @@
 
 
   "text.autoconfig.photosynthesis.option.spawnEggBaby.@PrefixText": "動物の卵からのスポーン",
-  "text.autoconfig.photosynthesis.option.spawnEggBaby.@Tooltip": "'YES'で動物のスポーンエッグから子供が産まれます。\n 対象: ブタ、ウシ、ヒツジ、ニワトリ、ウマとヤギ。\n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
+  "text.autoconfig.photosynthesis.option.spawnEggBaby.@Tooltip": "YESで動物のスポーンエッグから子供が産まれます。\n 対象: ブタ、ウシ、ヒツジ、ニワトリ、ウマとヤギ。\n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
   "text.autoconfig.photosynthesis.option.spawnEggBaby": "卵から子供がスポーン",
 
   "text.autoconfig.photosynthesis.option.doPigSpawn.@PrefixText": "動物のスポーン",
-  "text.autoconfig.photosynthesis.option.doPigSpawn.@Tooltip": "'NO'で無効化され、ブタが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
+  "text.autoconfig.photosynthesis.option.doPigSpawn.@Tooltip": "NOで無効化され、ブタが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
   "text.autoconfig.photosynthesis.option.doPigSpawn": "ブタの自然スポーン",
-  "text.autoconfig.photosynthesis.option.doCowSpawn.@Tooltip": "'NO'で無効化され、ウシが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
+  "text.autoconfig.photosynthesis.option.doCowSpawn.@Tooltip": "NOで無効化され、ウシが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
   "text.autoconfig.photosynthesis.option.doCowSpawn": "ウシの自然スポーン",
-  "text.autoconfig.photosynthesis.option.doSheepSpawn.@Tooltip": "'NO'で無効化され、ヒツジが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
+  "text.autoconfig.photosynthesis.option.doSheepSpawn.@Tooltip": "NOで無効化され、ヒツジが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
   "text.autoconfig.photosynthesis.option.doSheepSpawn": "ヒツジの自然スポーン",
-  "text.autoconfig.photosynthesis.option.doChickenSpawn.@Tooltip": "'NO'で無効化され、ニワトリが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
+  "text.autoconfig.photosynthesis.option.doChickenSpawn.@Tooltip": "NOで無効化され、ニワトリが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
   "text.autoconfig.photosynthesis.option.doChickenSpawn": "ニワトリの自然スポーン",
-  "text.autoconfig.photosynthesis.option.doHorseSpawn.@Tooltip": "'NO'で無効化され、ウマが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
+  "text.autoconfig.photosynthesis.option.doHorseSpawn.@Tooltip": "NOで無効化され、ウマが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
   "text.autoconfig.photosynthesis.option.doHorseSpawn": "ウマの自然スポーン",
-  "text.autoconfig.photosynthesis.option.doGoatSpawn.@Tooltip": "'NO'で無効化され、ヤギが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
+  "text.autoconfig.photosynthesis.option.doGoatSpawn.@Tooltip": "NOで無効化され、ヤギが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
   "text.autoconfig.photosynthesis.option.doGoatSpawn": "ヤギの自然スポーン",
 
   "text.autoconfig.photosynthesis.option.doCreeperSpawn.@PrefixText": "モブのスポーン",
-  "text.autoconfig.photosynthesis.option.doCreeperSpawn.@Tooltip": "'NO'で無効化され、クリーパーが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
+  "text.autoconfig.photosynthesis.option.doCreeperSpawn.@Tooltip": "NOで無効化され、クリーパーが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
   "text.autoconfig.photosynthesis.option.doCreeperSpawn": "クリーパーの自然スポーン",
-  "text.autoconfig.photosynthesis.option.doZombieSpawn.@Tooltip": "'NO'で無効化され、ゾンビが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
+  "text.autoconfig.photosynthesis.option.doZombieSpawn.@Tooltip": "NOで無効化され、ゾンビが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
   "text.autoconfig.photosynthesis.option.doZombieSpawn": "ゾンビの自然スポーン",
-  "text.autoconfig.photosynthesis.option.doZombieVillagerSpawn.@Tooltip": "'NO'で無効化され、ゾンビ村人が自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
+  "text.autoconfig.photosynthesis.option.doZombieVillagerSpawn.@Tooltip": "NOで無効化され、ゾンビ村人が自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
   "text.autoconfig.photosynthesis.option.doZombieVillagerSpawn": "ゾンビ村人の自然スポーン",
-  "text.autoconfig.photosynthesis.option.doZombieHorseSpawn.@Tooltip": "'NO'で無効化され、ゾンビホースが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
+  "text.autoconfig.photosynthesis.option.doZombieHorseSpawn.@Tooltip": "NOで無効化され、ゾンビホースが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
   "text.autoconfig.photosynthesis.option.doZombieHorseSpawn": "ゾンビホースの自然スポーン",
-  "text.autoconfig.photosynthesis.option.doSkeletonSpawn.@Tooltip": "'NO'で無効化され、スケルトンが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
+  "text.autoconfig.photosynthesis.option.doSkeletonSpawn.@Tooltip": "NOで無効化され、スケルトンが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
   "text.autoconfig.photosynthesis.option.doSkeletonSpawn": "スケルトンの自然スポーン",
-  "text.autoconfig.photosynthesis.option.doHuskSpawn.@Tooltip": "'NO'で無効化され、ハスクが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
+  "text.autoconfig.photosynthesis.option.doHuskSpawn.@Tooltip": "NOで無効化され、ハスクが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
   "text.autoconfig.photosynthesis.option.doHuskSpawn": "ハスクの自然スポーン",
-  "text.autoconfig.photosynthesis.option.doWitchSpawn.@Tooltip": "'NO'で無効化され、ウィッチが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
+  "text.autoconfig.photosynthesis.option.doWitchSpawn.@Tooltip": "NOで無効化され、ウィッチが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
   "text.autoconfig.photosynthesis.option.doWitchSpawn": "ウィッチの自然スポーン",
-  "text.autoconfig.photosynthesis.option.doSpiderSpawn.@Tooltip": "'NO'で無効化され、クモが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
+  "text.autoconfig.photosynthesis.option.doSpiderSpawn.@Tooltip": "NOで無効化され、クモが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
   "text.autoconfig.photosynthesis.option.doSpiderSpawn": "クモの自然スポーン",
-  "text.autoconfig.photosynthesis.option.doSkeletonHorseSpawn.@Tooltip": "'NO'で無効化され、スケルトンホースが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
+  "text.autoconfig.photosynthesis.option.doSkeletonHorseSpawn.@Tooltip": "NOで無効化され、スケルトンホースが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
   "text.autoconfig.photosynthesis.option.doSkeletonHorseSpawn": "スケルトンホースの自然スポーン",
-  "text.autoconfig.photosynthesis.option.doEnderManSpawn.@Tooltip": "'NO'で無効化され、エンダーマンが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
+  "text.autoconfig.photosynthesis.option.doEnderManSpawn.@Tooltip": "NOで無効化され、エンダーマンが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
   "text.autoconfig.photosynthesis.option.doEnderManSpawn": "エンダーマンの自然スポーン",
-  "text.autoconfig.photosynthesis.option.doDrownedSpawn.@Tooltip": "'NO'で無効化され、ドラウンドが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
+  "text.autoconfig.photosynthesis.option.doDrownedSpawn.@Tooltip": "NOで無効化され、ドラウンドが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
   "text.autoconfig.photosynthesis.option.doDrownedSpawn": "ドラウンドの自然スポーン",
 
   "text.autoconfig.photosynthesis.option.doBoarSpawn.@PrefixText": "モブのスポーン",
-  "text.autoconfig.photosynthesis.option.doBoarSpawn.@Tooltip": "'NO'で無効化され、イノシシが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
+  "text.autoconfig.photosynthesis.option.doBoarSpawn.@Tooltip": "NOで無効化され、イノシシが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
   "text.autoconfig.photosynthesis.option.doBoarSpawn": "イノシシの自然スポーン",
 
-  "text.autoconfig.photosynthesis.option.doAlligatorSpawn.@Tooltip": "'NO'で無効化され、ワニが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
+  "text.autoconfig.photosynthesis.option.doAlligatorSpawn.@Tooltip": "NOで無効化され、ワニが自然スポーンしなくなります。 \n (サーバーの場合、コンフィグファイルを直接編集し、再起動してください。)",
   "text.autoconfig.photosynthesis.option.doAlligatorSpawn": "ワニの自然スポーン",
 
   "text.autoconfig.photosynthesis.option.seasonDisplayTimeline": "季節タイムラインの表示",
@@ -152,7 +156,7 @@
   "text.autoconfig.photosynthesis.option.seasonDisplayInfo": "季節情報の表示",
   "text.autoconfig.photosynthesis.option.seasonDisplayInfo.@Tooltip": "画面左上、季節のアイコンの下に季節の情報を表示します。",
   "text.autoconfig.photosynthesis.option.seasonDisplayInfoScale": "季節の情報の文字の大きさ",
-  "text.autoconfig.photosynthesis.option.seasonDisplayInfoXOffset": "季節の情報の文字の位置",
+  "text.autoconfig.photosynthesis.option.seasonDisplayInfoXOffset": "季節の情報の文字の左右",
   "text.autoconfig.photosynthesis.option.seasonDisplayInfoYOffset": "季節の情報の文字の高さ",
 
   "effect.photosynthesis.dehydrated": "渇き",
@@ -330,10 +334,10 @@
   "block.photosynthesis.latex_block": "ラテックス",
   "item.photosynthesis.latex_bucket": "ラテックス入りバケツ",
 
-  "block.photosynthesis.mead": "蜂蜜酒",
-  "block.photosynthesis.mead_block": "蜂蜜酒",
-  "item.photosynthesis.mead_bucket": "蜂蜜酒入りバケツ",
-  "item.photosynthesis.measuring_cup_mead": "蜂蜜酒入り計量カップ",
+  "block.photosynthesis.mead": "ミード",
+  "block.photosynthesis.mead_block": "ミード",
+  "item.photosynthesis.mead_bucket": "ミード入りバケツ",
+  "item.photosynthesis.measuring_cup_mead": "ミード入り計量カップ",
 
   "block.photosynthesis.maple": "カエデの樹液",
   "block.photosynthesis.maple_block": "カエデの樹液",
@@ -606,7 +610,7 @@
   "block.photosynthesis.cashewtree_planks": "カシューの板材",
   "block.photosynthesis.cashewtree_leaves": "カシューの葉",
   "block.photosynthesis.cashewtree_sapling": "カシューの苗木",
-  "block.photosynthesis.cashewtree_bushcrop": "カシュー",
+  "block.photosynthesis.cashewtree_bushcrop": "カシューナッツ",
   "item.photosynthesis.cashew": "カシュー",
 
   "block.photosynthesis.datetree_log": "ナツメヤシの原木",
@@ -1245,11 +1249,11 @@
   "item.photosynthesis.fried_minced_sheep": "揚げた羊挽肉",
 
   "item.photosynthesis.pumpkin_soup": "パンプキンスープ",
-  "item.photosynthesis.waffle": "Waffle",
+  "item.photosynthesis.waffle": "ワッフル",
   "item.photosynthesis.wheat_dough": "小麦生地",
 
   "item.photosynthesis.mug": "マグ",
-  "item.photosynthesis.mug_mead": "蜂蜜酒入りマグ",
+  "item.photosynthesis.mug_mead": "ミード入りマグ",
   "item.photosynthesis.mug_water": "水入りマグ",
 
   "item.photosynthesis.leather_water_bladder": "空の革袋",
@@ -1293,11 +1297,11 @@
   "item.photosynthesis.wolf_pelt": "オオカミの毛皮",
 
 
-  "item.photosynthesis.squeezer_part": "スクイーザー部分",
+  "item.photosynthesis.squeezer_part": "スクイーザーのパーツ",
   "item.photosynthesis.cutting_knife_blade": "ナイフの刃",
   "item.photosynthesis.cutting_knife_handle": "ナイフのハンドル",
   "item.photosynthesis.whisk_handle": "泡立て器のハンドル",
-  "item.photosynthesis.whisk_part": "泡立て器部分",
+  "item.photosynthesis.whisk_part": "泡立て器のパーツ",
   "item.photosynthesis.mortar": "臼",
   "item.photosynthesis.pestle": "乳棒",
   "item.photosynthesis.rolling_pin_part": "麺棒部分",
@@ -1363,7 +1367,7 @@
   "item.photosynthesis.fried_rice": "チャーハン",
   "item.photosynthesis.cooked_rice": "ご飯",
 
-  "item.photosynthesis.mesophilic_culture": "中温培養",
+  "item.photosynthesis.mesophilic_culture": "中温菌",
   "item.photosynthesis.rennet": "凝乳",
 
   "item.photosynthesis.cheese_slicer": "チーズスライス",
@@ -1389,7 +1393,7 @@
   "item.photosynthesis.bark_jungle": "ジャングルの樹皮",
   "item.photosynthesis.bark_oak": "オークの樹皮",
   "item.photosynthesis.bark_spruce": "トウヒの樹皮",
-  "block.photosynthesis.tall_beachgrass": "高い砂草",
+  "block.photosynthesis.tall_beachgrass": "背の高い砂草",
   "block.photosynthesis.beachgrass": "砂草",
   "block.photosynthesis.decoration_rocks_random": "石",
   "block.photosynthesis.decoration_sticks_random": "棒",
@@ -1419,7 +1423,7 @@
   "block.photosynthesis.manure_bucket": "肥やしバケツ",
 
   "item.photosynthesis.slot_lock_locked": "ロック",
-  "item.photosynthesis.slot_lock_unlocked": "解除",
+  "item.photosynthesis.slot_lock_unlocked": "解除済み",
   "item.photosynthesis.debug_item": "デバッグツール",
 
   "entity.minecraft.villager.livestocktrader": "家畜トレーダー",
