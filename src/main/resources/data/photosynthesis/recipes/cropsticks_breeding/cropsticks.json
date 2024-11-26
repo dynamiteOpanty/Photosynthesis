@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#/#",
+    "/ /",
+    "#/#"
+  ],
+  "key": {
+    "#": {
+      "item": "photosynthesis:sturdy_stick"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "photosynthesis:cropsticks",
+    "count": 1
+  }
+}

@@ -1,4 +1,7 @@
 # Changelog
+Photosynthesis 1.20.1-0.0.24
+- Added recipe for cropsticks.
+- 
 Photosynthesis 1.20.1-0.0.23
 - Fixed compatability issues with Journey Map, HUD is now working again.
 
